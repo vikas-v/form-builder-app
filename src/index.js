@@ -9,6 +9,8 @@ import history from './history'
 import { store } from './sagas/store';
 import { HomeContainer } from './containers/Home';
 import SurvayFormContainer from './containers/SurvayForm';
+import SurvayComplete from './components/SurvayComplete';
+
 // import css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -18,6 +20,9 @@ const App = () => (
     <BrowserRouter history={history}>
       <Route exact={true} path="/">
         <HomeContainer />
+      </Route>
+      <Route exact={true} path="/form/survey-completed">
+        <SurvayComplete />
       </Route>
       <Route exact={true} path="/form/:formId">
         <SurvayFormContainer />

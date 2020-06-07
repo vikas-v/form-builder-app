@@ -8,7 +8,8 @@ import { bindActionCreators } from 'redux';
 
 const mapStateToProps = state => {
   return {
-    form: state.form
+    form: state.form,
+    loading: state.loading
   };
 };
 const mapDispatchToProps = dispatch => {
