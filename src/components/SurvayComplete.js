@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom'
 
-let SurvayComplete = ({ loading }) => (
+let SurvayComplete = () => (
     <div className="container">
         <div className="row">
             <div className="w-100 card text-center">
@@ -16,5 +16,4 @@ let SurvayComplete = ({ loading }) => (
         </div>
     </div>
 );
-const mapStateToProps = (state) => ({ loading: state.loading })
 export default withRouter(SurvayComplete);

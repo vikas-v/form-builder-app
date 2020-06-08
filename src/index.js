@@ -21,7 +21,7 @@ const App = () => (
       <Route exact={true} path="/">
         <HomeContainer />
       </Route>
-      <Route exact={true} path="/form/survey-completed">
+      <Route exact={true} path="/survey-completed">
         <SurvayComplete />
       </Route>
       <Route exact={true} path="/form/:formId">

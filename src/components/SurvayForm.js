@@ -57,7 +57,7 @@ let SurvayForm = ({ ...props }) => {
       user_name: userName
     })
 
-    props.history.push('/form/survey-completed')
+    props.history.push('/survey-completed')
   }
 
   return (

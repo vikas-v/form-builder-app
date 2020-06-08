@@ -19,7 +19,7 @@ const FormsList = ({ ...props }) => (
 						</tr>
 					</thead>
 					<tbody>
-						{props.forms.map((form, index) => (
+						{props.forms && props.forms.map((form, index) => (
 							<tr key={index}>
 								<td>{index + 1}</td>
 								<td>{form.title}</td>
